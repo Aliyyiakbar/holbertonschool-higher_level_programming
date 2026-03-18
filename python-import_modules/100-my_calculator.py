@@ -9,7 +9,7 @@ def main():
         exit(1)
 
     if argv[2] not in "+-*/":
-        print("Unknown operator. Available operators: +, -, * and /\n")
+        print("Unknown operator. Only: +, -, and / available\n")
         exit(1)
 
     a, b = int(argv[1]), int(argv[3])
