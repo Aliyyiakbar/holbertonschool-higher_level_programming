@@ -3,4 +3,4 @@ def magic_calculation(a, b):
     for i in range(4, 6):
         a += i
 
-    print(a - b)
+    return a - b
