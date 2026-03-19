@@ -1,2 +1,12 @@
 #!/usr/bin/python3
-print(dir("hidden_4.pyc"))
+import dis
+
+def magic_calculation(a, b):
+    for i in range(4, 6):
+        a = a + i
+
+    return a - b
+
+
+print(dis.dis(magic_calculation))
+
