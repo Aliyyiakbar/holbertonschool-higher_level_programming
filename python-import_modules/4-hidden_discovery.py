@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+import hidden_4
+
+
 def main():
-    a = []
-    with open("hidden_4.pyc", encoding="latin1") as f:
-        print(f.read())
+    for i in sorted(dir(hidden_4)):
+        if not i.startswith("__"):
+            print(i)
 
 
 if __name__ == "__main__":
