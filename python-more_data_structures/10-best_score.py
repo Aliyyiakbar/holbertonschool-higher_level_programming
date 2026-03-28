@@ -5,7 +5,7 @@ def best_score(a_dictionary):
         for x, y in a_dictionary.items():
             if mx is None:
                 res, mx = x, y
-            elif mx > y:
+            elif mx < y:
                 res, mx = x, y
 
     return res
