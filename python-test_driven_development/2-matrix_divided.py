@@ -14,25 +14,27 @@ def matrix_divided(matrix, div):
             "matrix must be a matrix (list of lists) of integers/floats"
         )
 
-    l = None
+    size = None
     res = []
 
     for r in matrix:
         if not isinstance(r, list):
             raise TypeError(
-                "matrix must be a matrix (list of lists) of integers/floats"
+                "matrix must be a matrix "
+                "(list of lists) of integers/floats"
             )
 
-        if l is None:
-            l = len(r)
-        elif len(r) != l:
+        if size is None:
+            size = len(r)
+        elif len(r) != size:
             raise TypeError("Each row of the matrix must have the same size")
 
         nr = []
         for n in r:
             if not isinstance(n, (int, float)):
                 raise TypeError(
-                    "matrix must be a matrix (list of lists) of integers/floats"
+                    "matrix must be a matrix "
+                    "(list of lists) of integers/floats"
                 )
             nr.append(round(n / div, 2))
         res.append(nr)
