@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 def safe_print_division(a, b):
+    res = None
     try:
-        print("{}".format(a / b))
+        res = a / b
 
     except Exception as e:
-        return None
+        pass
+
+    return res
