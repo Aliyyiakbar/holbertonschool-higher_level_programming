@@ -6,13 +6,13 @@
 >>> with redirect_stdout(b):
 ...     text_indentation("Hello. How are you? Fine: thanks.")
 >>> b.getvalue()
-'Hello.\\n\\nHow are you?\\n\\nFine:\\n\\nthanks.\\n\\n'
+'Hello.\n\nHow are you?\n\nFine:\n\nthanks.\n\n'
 
 >>> b = io.StringIO()
 >>> with redirect_stdout(b):
 ...     text_indentation("   Hello.   World")
 >>> b.getvalue()
-'Hello.\\n\\nWorld'
+'Hello.\n\nWorld'
 
 >>> b = io.StringIO()
 >>> with redirect_stdout(b):
