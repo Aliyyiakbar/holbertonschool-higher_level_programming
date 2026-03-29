@@ -8,6 +8,6 @@ def safe_print_division(a, b):
         pass
 
     finally:
-        print("{:d}".format(res))
+        print("{}".format(res))
 
     return res
