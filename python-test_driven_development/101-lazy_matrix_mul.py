@@ -12,7 +12,7 @@ def lazy_matrix_mul(m_a, m_b):
     if a.ndim == 0 or b.ndim == 0:
         raise ValueError("Scalar operands are not allowed, use '*' instead")
 
-    if 0 in a.shape or 0 in b.shape:
-        return np.dot(a, b)
+    if a.dtype.kind in "OUS" or b.dtype.kind in "OUS":
+        return np.einsum('ij,jk->ik', a, b)
 
-    return np.matmul(a, b)
+    return np.dot(a, b)
