@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 def magic_calculation(a, b):
-    if a < b:
-        c = a + b
-        for i in range(4, 6):
-            c = c + i
+    res = 0
 
-        return c
+    for i in range(1, 3):
+        if i > a:
+            res = b + a
+            raise Exception("Too far")
 
-    else:
-        return a - b
+        res += a ** b / i
+
+    return res
