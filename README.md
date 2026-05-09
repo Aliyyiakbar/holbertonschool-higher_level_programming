@@ -3,8 +3,8 @@
 This repository contains my Python programming work for Holberton School.
 It covers the fundamentals of higher-level programming: printing, strings,
 control flow, loops, functions, modules, data structures, exceptions,
-test-driven development, object-oriented programming, inheritance, and
-Python syntax and style.
+test-driven development, object-oriented programming, inheritance, abstract
+classes, interfaces, duck typing, and Python syntax and style.
 
 ## Requirements
 
@@ -12,7 +12,7 @@ Python syntax and style.
 - Interpreter: `python3` (version 3.8.*)
 - Style: `pycodestyle` (version 2.7.*)
 - All files end with a new line
-- All Python files start with `#!/usr/bin/python3`
+- All Python files start with `#!/usr/bin/python3` or `#!/usr/bin/env python3`
 - All files are executable when required
 - Project documentation is included in each directory
 
@@ -30,6 +30,7 @@ Each project directory has its own `README.md` with task details and file descri
 - `python-classes` — classes, objects, private attributes, properties, methods, and linked lists
 - `python-more_classes` — rectangles, special methods, class attributes, static methods, and class methods
 - `python-inheritance` — superclass and subclass behavior, inheritance checks, method overriding, and validation
+- `python-abc` — abstract classes, interfaces, duck typing, subclassing, iterators, multiple inheritance, and mixins
 
 ## Author
 
