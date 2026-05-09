@@ -1,22 +1,34 @@
 # Holberton School - Higher Level Programming
 
-This repository contains my Python programming work for Holberton School.
-It covers the fundamentals of higher-level programming: printing, strings,
-control flow, loops, functions, modules, data structures, exceptions,
-test-driven development, object-oriented programming, inheritance, abstract
-classes, interfaces, file input/output, JSON, serialization, marshaling,
-RESTful APIs, HTTP, Flask, and Python syntax and style.
+This repository contains my higher-level programming work for Holberton School.
+
+It covers the fundamentals of Python programming, data structures, object-oriented
+programming, testing, file input/output, serialization, RESTful APIs, Flask, and
+SQL database management with MySQL.
 
 ## Requirements
 
+### Python Projects
+
 - OS: Ubuntu 20.04 LTS
-- Interpreter: `python3` (version 3.8.*)
+- Interpreter: `python3` version 3.8.*
 - Some projects may use Python 3.9 depending on project requirements
-- Style: `pycodestyle` (version 2.7.*)
-- All files end with a new line
-- All Python files start with `#!/usr/bin/python3` or `#!/usr/bin/env python3`
-- All files are executable when required
+- Style: `pycodestyle` version 2.7.*
+- All files must end with a new line
+- All Python files must start with `#!/usr/bin/python3` or `#!/usr/bin/env python3`
+- All files must be executable when required
 - Project documentation is included in each directory
+
+### SQL Projects
+
+- OS: Ubuntu 22.04 LTS
+- Database: MySQL 8.0
+- Allowed editors: `vi`, `vim`, `emacs`
+- All SQL files must end with a new line
+- All SQL files must start with a comment describing the task
+- All SQL queries must have a comment before the query
+- All SQL keywords must be written in uppercase
+- A `README.md` file is required in each project directory
 
 Each project directory has its own `README.md` with task details and file descriptions.
 
@@ -36,6 +48,7 @@ Each project directory has its own `README.md` with task details and file descri
 - `python-input_output` — reading and writing files, JSON serialization, deserialization, and command-line arguments
 - `python-serialization` — JSON, pickle, CSV, XML, marshaling, serialization, and deserialization
 - `restful-api` — HTTP basics, API consumption, API development, Flask, authentication, and API documentation
+- `SQL_introduction` — database basics, MySQL, SQL syntax, DDL, DML, queries, subqueries, and SQL functions
 
 ## Author
 
