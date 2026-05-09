@@ -9,12 +9,12 @@ def print_stats(total_size, status_codes):
     print("File size: {}".format(total_size))
 
     for code in sorted(status_codes):
-        if status_codes[code] != 0:
+        if status_codes[code] > 0:
             print("{}: {}".format(code, status_codes[code]))
 
 
 def main():
-    """Read log lines from stdin and print metrics every 10 lines."""
+    """Read log lines from stdin and print metrics."""
     total_size = 0
     line_count = 0
     status_codes = {
@@ -47,6 +47,9 @@ def main():
 
             if line_count % 10 == 0:
                 print_stats(total_size, status_codes)
+
+        if line_count % 10 != 0:
+            print_stats(total_size, status_codes)
 
     except KeyboardInterrupt:
         print_stats(total_size, status_codes)
