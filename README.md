@@ -4,13 +4,14 @@ This repository contains my Python programming work for Holberton School.
 It covers the fundamentals of higher-level programming: printing, strings,
 control flow, loops, functions, modules, data structures, exceptions,
 test-driven development, object-oriented programming, inheritance, abstract
-classes, interfaces, file input/output, JSON, serialization, marshaling, and
-Python syntax and style.
+classes, interfaces, file input/output, JSON, serialization, marshaling,
+RESTful APIs, HTTP, Flask, and Python syntax and style.
 
 ## Requirements
 
 - OS: Ubuntu 20.04 LTS
 - Interpreter: `python3` (version 3.8.*)
+- Some projects may use Python 3.9 depending on project requirements
 - Style: `pycodestyle` (version 2.7.*)
 - All files end with a new line
 - All Python files start with `#!/usr/bin/python3` or `#!/usr/bin/env python3`
@@ -34,6 +35,7 @@ Each project directory has its own `README.md` with task details and file descri
 - `python-abc` — abstract classes, interfaces, duck typing, subclassing, iterators, multiple inheritance, and mixins
 - `python-input_output` — reading and writing files, JSON serialization, deserialization, and command-line arguments
 - `python-serialization` — JSON, pickle, CSV, XML, marshaling, serialization, and deserialization
+- `restful-api` — HTTP basics, API consumption, API development, Flask, authentication, and API documentation
 
 ## Author
 
