@@ -4,7 +4,8 @@ This repository contains my Python programming work for Holberton School.
 It covers the fundamentals of higher-level programming: printing, strings,
 control flow, loops, functions, modules, data structures, exceptions,
 test-driven development, object-oriented programming, inheritance, abstract
-classes, interfaces, duck typing, and Python syntax and style.
+classes, interfaces, file input/output, JSON serialization, and Python syntax
+and style.
 
 ## Requirements
 
@@ -31,6 +32,7 @@ Each project directory has its own `README.md` with task details and file descri
 - `python-more_classes` — rectangles, special methods, class attributes, static methods, and class methods
 - `python-inheritance` — superclass and subclass behavior, inheritance checks, method overriding, and validation
 - `python-abc` — abstract classes, interfaces, duck typing, subclassing, iterators, multiple inheritance, and mixins
+- `python-input_output` — reading and writing files, JSON serialization, deserialization, and command-line arguments
 
 ## Author
 
