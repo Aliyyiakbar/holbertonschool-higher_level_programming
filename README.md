@@ -52,6 +52,7 @@ Each project directory has its own `README.md` with task details and file descri
 - `SQL_more_queries` — user privileges, constraints (NOT NULL, UNIQUE), primary/foreign keys, and JOINs (INNER, LEFT, RIGHT)
 - `python-object_relational_mapping` — linking databases to Python using MySQLdb and SQLAlchemy (ORM)
 - `javascript-warm_up` — JavaScript basics, variables, data types, loops, conditionals, functions, objects, arrays, and scripting with Node.js
+- `javascript-dom_manipulation` — DOM selection, events, style updates, content updates, and Fetch/XMLHttpRequest requests
 
 ## Author
 
