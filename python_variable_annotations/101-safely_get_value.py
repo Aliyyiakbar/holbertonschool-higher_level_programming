@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
 """
-This module contains a duck-typed annotated function that safely
-returns the first element of a sequence.
+This module provides a types-annotated function to safely retrieve
+a value from a mapping object using a TypeVar for dynamic default typing.
 """
-from typing import Any, Optional, Sequence
+from typing import Any, Mapping, TypeVar, Union
+
+T = TypeVar('T')
 
 
-def safe_first_element(lst: Sequence[Any]) -> Optional[Any]:
+def safely_get_value(dct: Mapping, key: Any, default: Union[T, None] = None) -> Union[Any, T]:
     """
-    Returns the first element of a sequence if it exists, otherwise None.
+    Safely returns a value from a dictionary/mapping if the key exists,
+    otherwise returns the default value.
     """
-    if lst:
-        return lst[0]
+    if key in dct:
+        return dct[key]
     else:
-        return None
+        return default
