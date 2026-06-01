@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Changes the name of a State object with id = 2."""
+"""Deletes all State objects with a name containing 'a'."""
 
 import sys
 from sqlalchemy import create_engine
@@ -20,10 +20,10 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    state = session.query(State).filter(State.id == 2).first()
+    states = session.query(State).filter(State.name.like("%a%")).all()
 
-    if state:
-        state.name = "New Mexico"
-        session.commit()
+    for state in states:
+        session.delete(state)
 
+    session.commit()
     session.close()
