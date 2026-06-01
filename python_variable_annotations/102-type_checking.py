@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
 """
-This module contains a duck-typed annotated function that safely
-returns the first element of a sequence.
+This module provides a type-checked function to zoom into an array
+by repeating its elements a specified number of times.
 """
-from typing import Any, Optional, Sequence
+from typing import List, Tuple
 
 
-def safe_first_element(lst: Sequence[Any]) -> Optional[Any]:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """
-    Returns the first element of a sequence if it exists, otherwise None.
+    Creates a zoomed-in list by repeating each element in the input tuple
+    by the given multiplication factor.
     """
-    if lst:
-        return lst[0]
-    else:
-        return None
+    zoomed_in: List = [
+        item for item in lst
+        for i in range(factor)
+    ]
+    return zoomed_in
+
+
+array = (12, 72, 91)
+zoom_2x = zoom_array(array)
+zoom_3x = zoom_array(array, 3)
