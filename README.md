@@ -55,7 +55,6 @@ Each project directory has its own `README.md` with task details and file descri
 - `javascript-dom_manipulation` — DOM selection, events, style updates, content updates, and Fetch/XMLHttpRequest requests
 - `python-server_side_rendering` — server-side rendering with Python, Flask, Jinja templating, and data from JSON, CSV, and SQLite
 - `python-everything_is_object` — Python objects, references, aliasing, mutability, immutability, and object identity
-- `python_variable_annotations` — type annotations, duck typing, mypy validation, and advanced Python typing
 
 ## Author
 
