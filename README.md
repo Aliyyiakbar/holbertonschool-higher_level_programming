@@ -50,6 +50,7 @@ Each project directory has its own `README.md` with task details and file descri
 - `restful-api` — HTTP basics, API consumption, API development, Flask, authentication, and API documentation
 - `SQL_introduction` — database basics, MySQL, SQL syntax, DDL, DML, queries, subqueries, and SQL functions
 - `SQL_more_queries` — user privileges, constraints (NOT NULL, UNIQUE), primary/foreign keys, and JOINs (INNER, LEFT, RIGHT)
+- `python-object_relational_mapping` — linking databases to Python using MySQLdb and SQLAlchemy (ORM)
 
 ## Author
 
