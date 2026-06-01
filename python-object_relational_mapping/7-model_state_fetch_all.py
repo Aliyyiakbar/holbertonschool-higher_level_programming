@@ -1,29 +1,26 @@
 #!/usr/bin/python3
-"""This module connects to a MySQL database and lists all states."""
-import MySQLdb
-import sys
+"""Lists all State objects from hbtn_0e_6_usa."""
 
+import sys
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from model_state import Base, State
 
 if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
 
-    db = MySQLdb.connect(
-        host="localhost",
-        port=3306,
-        user=username,
-        passwd=password,
-        db=database
+    engine = create_engine(
+        "mysql+mysqldb://{}:{}@localhost:3306/{}".format(
+            username, password, database
+        )
     )
 
-    cursor = db.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    Session = sessionmaker(bind=engine)
+    session = Session()
 
-    rows = cursor.fetchall()
+    for state in session.query(State).order_by(State.id).all():
+        print("{}: {}".format(state.id, state.name))
 
-    for row in rows:
-        print(row)
-
-    cursor.close()
-    db.close()
+    session.close()
