@@ -1,3 +1,10 @@
 #!/usr/bin/node
-const myVar = 'JavaScript is amazing';
-console.log(myVar);
+const firstArg = process.argv[2];
+const number = parseInt(firstArg, 10);
+if (Number.isInteger(number)) {
+  for (let i = 0; i < number; i++) {
+    console.log('X'.repeat(number));
+  }
+} else {
+  console.log('Missing size');
+}
